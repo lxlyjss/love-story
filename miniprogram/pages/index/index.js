@@ -8,7 +8,7 @@ Page({
   data: {
     photoList: [
       {
-        imageUrl: 'cloud://production-fb572a.7072-production-fb572a/微信图片_20181222162832.jpg',
+        imageUrl: 'cloud://love-story-c127d4.6c6f-love-story-c127d4/photos/1.jpg',
         width: 200,
         title: '老婆我爱你',
         top: 10,
@@ -17,7 +17,7 @@ Page({
         rotate: 24
       },
       {
-        imageUrl: 'cloud://production-fb572a.7072-production-fb572a/微信图片_20181222162744.jpg',
+        imageUrl: 'cloud://love-story-c127d4.6c6f-love-story-c127d4/photos/10.jpg',
         width: 300,
         title: '爱你么么哒',
         top: 600,
@@ -26,7 +26,7 @@ Page({
         rotate: 12
       },
       {
-        imageUrl: 'cloud://production-fb572a.7072-production-fb572a/小仙女.jpg',
+        imageUrl: 'cloud://love-story-c127d4.6c6f-love-story-c127d4/photos/11.jpg',
         width: 300,
         title: '我的宝宝是小仙女',
         top: -200,
@@ -35,7 +35,7 @@ Page({
         rotate: -25
       },
       {
-        imageUrl: 'cloud://production-fb572a.7072-production-fb572a/微信图片_20181222162821.jpg',
+        imageUrl: 'cloud://love-story-c127d4.6c6f-love-story-c127d4/photos/2.jpg',
         width: 260,
         title: '圆球是我的宝贝!',
         top: -500,
@@ -44,7 +44,61 @@ Page({
         rotate: -10
       },
       {
-        imageUrl: 'cloud://production-fb572a.7072-production-fb572a/微信图片_20181222162838.jpg',
+        imageUrl: 'cloud://love-story-c127d4.6c6f-love-story-c127d4/photos/3.jpg',
+        width: 260,
+        title: '球球我爱你!',
+        top: -400,
+        left: 900,
+        color: '#000',
+        rotate: -10
+      },
+      {
+        imageUrl: 'cloud://love-story-c127d4.6c6f-love-story-c127d4/photos/4.jpg',
+        width: 260,
+        title: '球球我爱你!',
+        top: -500,
+        left: 1200,
+        color: '#000',
+        rotate: -10
+      },
+      {
+        imageUrl: 'cloud://love-story-c127d4.6c6f-love-story-c127d4/photos/5.jpg',
+        width: 260,
+        title: '球球我爱你!',
+        top: -400,
+        left: 900,
+        color: '#000',
+        rotate: -10
+      },
+      {
+        imageUrl: 'cloud://love-story-c127d4.6c6f-love-story-c127d4/photos/6.jpg',
+        width: 260,
+        title: '球球我爱你!',
+        top: -400,
+        left: 900,
+        color: '#000',
+        rotate: -10
+      },
+      {
+        imageUrl: 'cloud://love-story-c127d4.6c6f-love-story-c127d4/photos/7.jpg',
+        width: 260,
+        title: '球球我爱你!',
+        top: -400,
+        left: 900,
+        color: '#000',
+        rotate: -10
+      },
+      {
+        imageUrl: 'cloud://love-story-c127d4.6c6f-love-story-c127d4/photos/8.jpg',
+        width: 260,
+        title: '球球我爱你!',
+        top: -400,
+        left: 900,
+        color: '#000',
+        rotate: -10
+      },
+      {
+        imageUrl: 'cloud://love-story-c127d4.6c6f-love-story-c127d4/photos/9.jpg',
         width: 260,
         title: '球球我爱你!',
         top: -400,
