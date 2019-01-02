@@ -1,0 +1,5 @@
+<!--miniprogram/pages/demo/index/index.wxml-->
+<button bindtap="toCardListPage">去列表页面</button>
+<button bindtap='toCardDetailPage'>到插件名片详情页面</button>
+<button bindtap='toIMChatPage'>到插件IM聊天页面</button>
+<button bindtap='toPosterPage'>到插件海报页面</button>

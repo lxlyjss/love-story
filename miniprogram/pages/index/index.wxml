@@ -1,0 +1,18 @@
+<!--index.wxml-->
+<view class="container">
+  <image mode='aspectFill' class='photo_bg' src='cloud://production-fb572a.7072-production-fb572a/背景.jpg'></image>
+  <view class='box'>
+    <view class='star_container star_container1'>
+      <image class='star' mode='widthFix' style='transform: translateX({{item.left}}rpx) translateY({{item.top}}rpx) rotateZ({{item.rotate}}deg);' src='cloud://production-fb572a.7072-production-fb572a/star.png' wx:for="{{starList}}" wx:key="{{index}}"></image>
+    </view>
+    <view class='star_container star_container2'>
+      <image class='star' mode='widthFix' style='transform: translateX({{item.left}}rpx) translateY({{item.top}}rpx) rotateZ({{item.rotate}}deg);' src='cloud://production-fb572a.7072-production-fb572a/star.png' wx:for="{{starList}}" wx:key="{{index}}"></image>
+    </view>
+    <view class='photo_list_container'>
+      <view class='photo_list_item' style='transform: translateX({{item.left}}rpx) translateY({{item.top}}rpx) rotateZ({{item.rotate}}deg);' wx:for="{{photoList}}" wx:key="{{index}}">
+        <image mode='widthFix' style='width: {{item.width}}rpx;' src='{{item.imageUrl}}'></image>
+        <view class='title'>{{item.title}}</view>
+      </view>
+    </view>
+  </view>
+</view>

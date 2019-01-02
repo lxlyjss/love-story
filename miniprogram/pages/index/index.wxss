@@ -1,0 +1,69 @@
+.container{
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+.container .photo_bg{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.box{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  overflow-y: hidden;
+  overflow-x: auto;
+}
+.star_container{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 9;
+}
+.star_container1{
+  transform: translateY(0vh);
+  animation: slideDown1 10s linear infinite;
+}
+.star_container2{
+  transform: translateY(-100vh);
+  animation: slideDown2 10s linear infinite;
+}
+.star_container .star{
+  width: 50rpx;
+  height: 50rpx;
+}
+.photo_list_container{
+  width: 100%;
+  height: 100%;
+}
+.photo_list_item{
+  padding: 20rpx 20rpx 60rpx;
+  background-color: #fff;
+  display: inline-block;
+  border: 10rpx solid #444;
+}
+.photo_list_item image{
+  width: 300rpx;
+}
+.photo_list_item .title{
+  font-size: 24rpx;
+}
+@keyframes slideDown1{
+  from{
+    transform: translateY(0vh)
+  }
+  to{
+    transform: translateY(100vh)
+  }
+}
+@keyframes slideDown2{
+  from{
+    transform: translateY(-100vh)
+  }
+  to{
+    transform: translateY(0vh)
+  }
+}
