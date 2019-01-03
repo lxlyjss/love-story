@@ -11,107 +11,74 @@ Page({
         imageUrl: 'cloud://love-story-c127d4.6c6f-love-story-c127d4/photos/1.jpg',
         width: 200,
         title: '老婆我爱你',
-        top: 10,
-        left: 100,
-        color: '#000',
-        rotate: 24
+        color: '#000'
       },
       {
         imageUrl: 'cloud://love-story-c127d4.6c6f-love-story-c127d4/photos/10.jpg',
         width: 300,
         title: '爱你么么哒',
-        top: 600,
-        left: -100,
-        color: '#000',
-        rotate: 12
+        color: '#000'
       },
       {
         imageUrl: 'cloud://love-story-c127d4.6c6f-love-story-c127d4/photos/11.jpg',
         width: 300,
         title: '我的宝宝是小仙女',
-        top: -200,
-        left: 500,
-        color: '#000',
-        rotate: -25
+        color: '#000'
       },
       {
         imageUrl: 'cloud://love-story-c127d4.6c6f-love-story-c127d4/photos/2.jpg',
         width: 260,
         title: '圆球是我的宝贝!',
-        top: -500,
-        left: 500,
-        color: '#000',
-        rotate: -10
+        color: '#000'
       },
       {
         imageUrl: 'cloud://love-story-c127d4.6c6f-love-story-c127d4/photos/3.jpg',
         width: 260,
         title: '球球我爱你!',
-        top: -400,
-        left: 900,
-        color: '#000',
-        rotate: -10
+        color: '#000'
       },
       {
         imageUrl: 'cloud://love-story-c127d4.6c6f-love-story-c127d4/photos/4.jpg',
         width: 260,
         title: '球球我爱你!',
-        top: -500,
-        left: 1200,
-        color: '#000',
-        rotate: -10
+        color: '#000'
       },
       {
         imageUrl: 'cloud://love-story-c127d4.6c6f-love-story-c127d4/photos/5.jpg',
         width: 260,
         title: '球球我爱你!',
-        top: -400,
-        left: 900,
-        color: '#000',
-        rotate: -10
+        color: '#000'
       },
       {
         imageUrl: 'cloud://love-story-c127d4.6c6f-love-story-c127d4/photos/6.jpg',
         width: 260,
         title: '球球我爱你!',
-        top: -400,
-        left: 900,
-        color: '#000',
-        rotate: -10
+        color: '#000'
       },
       {
         imageUrl: 'cloud://love-story-c127d4.6c6f-love-story-c127d4/photos/7.jpg',
         width: 260,
         title: '球球我爱你!',
-        top: -400,
-        left: 900,
-        color: '#000',
-        rotate: -10
+        color: '#000'
       },
       {
         imageUrl: 'cloud://love-story-c127d4.6c6f-love-story-c127d4/photos/8.jpg',
         width: 260,
         title: '球球我爱你!',
-        top: -400,
-        left: 900,
-        color: '#000',
-        rotate: -10
+        color: '#000'
       },
       {
         imageUrl: 'cloud://love-story-c127d4.6c6f-love-story-c127d4/photos/9.jpg',
         width: 260,
         title: '球球我爱你!',
-        top: -400,
-        left: 900,
-        color: '#000',
-        rotate: -10
+        color: '#000'
       }
     ],
     starList: []
   },
-
   onLoad: function() {
-    this.setStar()
+    // this.setStar()
+    this.setPhotos()
   },
   setStar () {
     let list = []
@@ -127,6 +94,15 @@ Page({
       list.push(temp)
     }
     this.setData({starList: list})
+  },
+  setPhotos () {
+    let list = this.data.photoList;
+    list.forEach(item => {
+      item.top = this.getRandom(0, 6) * 100
+      item.left = this.getRandom(0, 100)
+      item.rotate = this.getRandom(0, 20) > 10 ? this.getRandom(0, 20) : -this.getRandom(0, 20)
+    })
+    this.setData({"photoList": list})
   },
   getRandom (min, max) {
     return parseInt(Math.random() * (max - min + 1) + min, 10);
