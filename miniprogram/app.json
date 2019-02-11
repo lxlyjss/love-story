@@ -1,6 +1,8 @@
 {
   "pages": [
-    "pages/index/index"
+    "pages/book/index",
+    "pages/index/index",
+    "pages/manage/index"
   ],
   "window": {
     "backgroundColor": "#F6F6F6",
@@ -8,5 +10,23 @@
     "navigationBarBackgroundColor": "#F6F6F6",
     "navigationBarTitleText": "love-story",
     "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#8a8a8a",
+    "selectedColor": "#ef3f7c",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "/images/tupian_g.png",
+        "selectedIconPath": "/images/tupian.png",
+        "text": "相册"
+      },
+      {
+        "pagePath": "pages/book/index",
+        "iconPath": "/images/book_g.png",
+        "selectedIconPath": "/images/book.png",
+        "text": "爱的记忆"
+      }
+    ]
   }
 }

@@ -6,7 +6,7 @@
   left: 0;
   top: 0;
 }
-.photo_list_container{
+.box{
   width: 100%;
 }
 .slide_box{
@@ -36,11 +36,14 @@
   width: 50rpx;
   height: 50rpx;
 }
+.photo_list_container{
+  width: 100%;
+}
 .photo_list_item{
   float: left;
 }
 .border_box{
-  border: 10rpx solid #FFF68F;
+  border: 10rpx solid #444;
   padding: 20rpx 20rpx 60rpx;
   background-color: #fff;
   position: relative;

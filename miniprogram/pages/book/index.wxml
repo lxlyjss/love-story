@@ -1,0 +1,27 @@
+<!--miniprogram/pages/book/index.wxml-->
+<view class='container'>
+  <swiper
+    vertical
+    circular
+    autoplay="{{banner.autoplay}}"
+    interval="{{banner.interval}}"
+    duration="{{banner.duration}}"
+    bindchange="bannerChange"
+    current="{{bannerIndex}}"
+    class='swiper_container'>
+    <swiper-item wx:for="{{banner.imgUrls}}" 
+      wx:key="{{index}}" class="swiper_item">
+      <view class='swiper_box' hidden="{{!item.show}}">
+        <image src="{{item.bgImg}}" class="slide_bg" />
+        <view class='item_container'>
+          <image class='animated {{imgs.transform?imgs.className:""}}' 
+            style='width: {{imgs.width}}rpx;height: {{imgs.height}}rpx;left: {{imgs.left}}rpx;top: {{imgs.top}}rpx;{{imgs.hasShadow?"box-shadow:0px 0px 40px 0px #bbb;":""}}' 
+            src='{{imgs.imgUrl}}' wx:for="{{item.imgs}}" 
+            wx:for-item="imgs" 
+            wx:key="{{index}}"></image>
+        </view>
+      </view>
+    </swiper-item>
+  </swiper>
+  <view class='next_btn'></view>
+</view>

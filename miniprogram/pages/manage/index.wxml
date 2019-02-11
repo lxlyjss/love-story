@@ -1,6 +1,6 @@
 <!--miniprogram/pages/manage/index.wxml-->
 <image mode='aspectFill' class='photo_bg' src='cloud://love-story-c127d4.6c6f-love-story-c127d4/photos/背景.jpg'></image>
-<view class='photo_list_container'>
+<view class='box'>
   <view class='photo_list_item' wx:for="{{photoList}}" wx:key="{{index}}">
     <view class='border_box' style='transform: translateX({{item.left}}rpx) translateY({{item.top}}rpx) rotateZ({{item.rotate}}deg);'>
       <image mode='widthFix' style='width: {{item.width}}rpx;' src='{{item.imageUrl}}'></image>

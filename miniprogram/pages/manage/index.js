@@ -1,5 +1,8 @@
 //index.js
-
+const audioContext = wx.createInnerAudioContext()
+audioContext.src = 'https://m10.music.126.net/20181222181345/70401c44a8b60ee65649f9e2cd7ca341/ymusic/9ddc/b10e/919e/2ef50b0473f7f2cce3193ed620898cd7.mp3'
+audioContext.play();
+const app = getApp()
 
 Page({
   data: {
@@ -36,50 +39,47 @@ Page({
       },
       {
         imageUrl: 'cloud://love-story-c127d4.6c6f-love-story-c127d4/photos/4.jpg',
-        width: 180,
-        title: '球球你是个大笨猪!',
+        width: 260,
+        title: '球球我爱你!',
         color: '#000'
       },
       {
         imageUrl: 'cloud://love-story-c127d4.6c6f-love-story-c127d4/photos/5.jpg',
-        width: 220,
-        title: '张媛是个大傻子!',
+        width: 260,
+        title: '球球我爱你!',
         color: '#000'
       },
       {
         imageUrl: 'cloud://love-story-c127d4.6c6f-love-story-c127d4/photos/6.jpg',
-        width: 300,
-        title: '圆球love forever!',
+        width: 260,
+        title: '球球我爱你!',
         color: '#000'
       },
       {
         imageUrl: 'cloud://love-story-c127d4.6c6f-love-story-c127d4/photos/7.jpg',
-        width: 160,
-        title: '张媛爱刘信林!',
+        width: 260,
+        title: '球球我爱你!',
         color: '#000'
       },
       {
         imageUrl: 'cloud://love-story-c127d4.6c6f-love-story-c127d4/photos/8.jpg',
-        width: 210,
-        title: '媛媛永远是我的小仙女!',
+        width: 260,
+        title: '球球我爱你!',
         color: '#000'
       },
       {
         imageUrl: 'cloud://love-story-c127d4.6c6f-love-story-c127d4/photos/9.jpg',
-        width: 240,
-        title: '嗝屁组合就是我们!',
+        width: 260,
+        title: '球球我爱你!',
         color: '#000'
       }
     ],
     starList: [],
-    slideHeight: 0,
-    audioContext: null
+    slideHeight: 0
   },
   onLoad: function () {
-    wx.showShareMenu()
     this.setStar()
     this.setPhotos()
-    this.setBgAudio()
   },
   setStar() {
     let list = []
@@ -108,21 +108,7 @@ Page({
   getRandom(min, max) {
     return parseInt(Math.random() * (max - min + 1) + min, 10);
   },
-  setBgAudio () {
-    this.data.audioContext = wx.createInnerAudioContext()
-    this.data.audioContext.src = 'https://d-ring.i4.cn/audio/2018/06/08/16/1528445837537_334697.mp3?0.8640883349010355'
-    this.data.audioContext.autoplay = true;
-    this.data.audioContext.loop = true;
-    this.data.audioContext.onError((err) => {
-      console.log(err)
-    })
-  },
-  onHide () {
-    this.data.audioContext.pause()
-  },
-  onShareAppMessage() {
-    return {
-      title: "献给我的最爱, 媛媛~"
-    }
+  onBoxScroll(e) {
+    console.log(e.detail.scrollTop)
   }
 })

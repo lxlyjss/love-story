@@ -2,15 +2,16 @@
 	"miniprogramRoot": "miniprogram/",
 	"cloudfunctionRoot": "cloudfunctions/",
 	"setting": {
-		"urlCheck": true,
+		"urlCheck": false,
 		"es6": true,
 		"postcss": true,
 		"minified": true,
-		"newFeature": true
+		"newFeature": true,
+		"autoAudits": false
 	},
 	"appid": "wx94495e916080f2cc",
 	"projectname": "love-story",
-	"libVersion": "2.2.5",
+	"libVersion": "2.5.2",
 	"condition": {
 		"search": {
 			"current": -1,
@@ -28,12 +29,26 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 0,
+			"current": 2,
 			"list": [
 				{
 					"id": -1,
 					"name": "db guide",
-					"pathName": "pages/databaseGuide/databaseGuide"
+					"pathName": "pages/databaseGuide/databaseGuide",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "照片墙",
+					"pathName": "pages/index/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "管理",
+					"pathName": "pages/manage/index",
+					"scene": null
 				}
 			]
 		}
